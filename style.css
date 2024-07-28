@@ -1,0 +1,122 @@
+body {
+    font-family: 'Times New Roman', Times, serif; /* Set the font family */
+    font-style: italic; /* Set the font style to italic */
+    font-weight: bold; /* Set the font weight to bold */
+    background: linear-gradient(135deg, #2c3e50, #4ca1af); /* Set the background gradient */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100vh; /* Set the height to full viewport height */
+    margin: 0; /* Remove default margin */
+    color: #fff; /* Set the text color */
+    transition: all 0.5s ease; /* Smooth transition for all properties */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Set a semi-transparent background color */
+    padding: 20px; /* Add padding */
+    border-radius: 15px; /* Round the corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a shadow */
+    width: 350px; /* Set a fixed width */
+    text-align: center; /* Center the text */
+    transition: all 0.5s ease; /* Smooth transition for all properties */
+}
+
+.container:hover {
+    transform: scale(1.05); /* Slightly enlarge the container on hover */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5); /* Increase the shadow on hover */
+}
+
+h1 {
+    margin-bottom: 20px; /* Add margin below the heading */
+    color: #2c3e50; /* Set the text color */
+    font-size: 2em; /* Set the font size */
+    transition: all 0.5s ease; /* Smooth transition for all properties */
+}
+
+h1:hover {
+    color: #4ca1af; /* Change the color on hover */
+}
+
+form {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space between items */
+    margin-bottom: 20px; /* Add margin below the form */
+}
+
+input[type="text"] {
+    width: 70%; /* Set the width to 70% */
+    padding: 10px; /* Add padding */
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 8px; /* Round the corners */
+    transition: all 0.5s ease; /* Smooth transition for all properties */
+}
+
+input[type="text"]:focus {
+    border-color: #4ca1af; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(76, 161, 175, 0.5); /* Add a shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    width: 25%; /* Set the width to 25% */
+    padding: 10px; /* Add padding */
+    border: none; /* Remove border */
+    background-color: #28a745; /* Set the background color */
+    color: white; /* Set the text color */
+    border-radius: 8px; /* Round the corners */
+    cursor: pointer; /* Change the cursor to pointer */
+    transition: all 0.5s ease; /* Smooth transition for all properties */
+}
+
+button:hover {
+    background-color: #218838; /* Change background color on hover */
+}
+
+ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+li {
+    background-color: #f9f9f9; /* Set the background color */
+    padding: 10px; /* Add padding */
+    border: 1px solid #ddd; /* Add a border */
+    margin-top: 10px; /* Add margin on top */
+    border-radius: 8px; /* Round the corners */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Center items vertically */
+    transition: all 0.5s ease; /* Smooth transition for all properties */
+}
+
+li:hover {
+    background-color: #e2e2e2; /* Change background color on hover */
+}
+
+li.completed {
+    text-decoration: line-through; /* Add a line through completed tasks */
+    color: #888; /* Change text color */
+    background-color: #d4edda; /* Light green background */
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+
+li.deleting {
+    background-color: #f8d7da; /* Light red background */
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+
+button.delete {
+    background-color: #dc3545; /* Set the background color */
+    border: none; /* Remove border */
+    padding: 5px 10px; /* Add padding */
+    border-radius: 8px; /* Round the corners */
+    color: white; /* Set the text color */
+    cursor: pointer; /* Change the cursor to pointer */
+    transition: all 0.5s ease; /* Smooth transition for all properties */
+}
+
+button.delete:hover {
+    background-color: #c82333; /* Change background color on hover */
+}
